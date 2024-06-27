@@ -1,0 +1,12 @@
+export { default as HeroSection } from "./heroSection";
+export { default as Network } from "./network";
+export { default as AreaOfFocus } from "./areaOfFocus";
+export { default as OurConcept } from "./ourConcept";
+export { default as OurServices } from "./ourServices";
+export { default as OurStudio } from "./ourStudio";
+export { default as CoFound } from "./coFound";
+export { default as EirProgram } from "./eirProgram";
+export { default as SnicInvestors } from "./snicInvestors";
+export { default as Equity } from "./equity";
+export { default as Blogs } from "./blogs";
+export { default as Featured } from "./featured";

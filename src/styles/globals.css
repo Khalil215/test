@@ -2,32 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+::-webkit-scrollbar {
+  display: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+li:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: 'matter';
+  font-weight: 300;
+  src: url('/fonts/Matter-Light.ttf') format('truetype');
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@font-face {
+  font-family: 'matter';
+  font-weight: 400;
+  src: url('/fonts/Matter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'matter';
+  font-weight: 500;
+  src: url('/fonts/Matter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'matter';
+  font-weight: 600;
+  src: url('/fonts/Matter-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'matter';
+  font-weight: 700;
+  src: url('/fonts/Matter-Bold.ttf') format('truetype');
+}
+
+.lightf {
+  font-family: 'matter';
+  font-weight: 300;
+}
+
+.regularf {
+  font-family: 'matter';
+  font-weight: 400;
+}
+
+.mediumf {
+  font-family: 'matter';
+  font-weight: 500;
+}
+
+.semiBoldf {
+  font-family: 'matter';
+  font-weight: 600;
+}
+
+.boldf {
+  font-family: 'matter';
+  font-weight: 700;
+}
+
+.header {
+  @apply font-medium text-3xl md:text-5xl text-center md:w-[700px] mx-auto
+}
+.subHeading {
+  @apply font-normal mt-6 text-center mx-auto
+}
+.card {
+  @apply bg-white rounded-xl p-5
+}
+.roundText {
+  @apply bg-white px-[28px] py-[12px] text-[18px] rounded-full
+}
+.cardFlex {
+  @apply mt-10 flex flex-wrap gap-10 justify-center
 }
